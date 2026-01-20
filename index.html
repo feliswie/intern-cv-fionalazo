@@ -7,28 +7,30 @@
     <title>CV - Fiona Elexie Lazo</title>
 </head>
 <body>
-    <header>
+    <header id="head-foot">
         <h1>Fiona Elexie E. Lazo</h1>
-        <h2>Web Developer Intern</h2>        
+        <h2>Web Developer Intern</h2>
+        <p id="counter">0</p>     
     </header>
 
     <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
+        <button onclick="changeTheme()" id="themeBtn">Change Theme</button>
     </nav>
 
     <main>
-        <section>
+        <section onclick="showAboutMe()">
             <h2>ABOUT ME</h2>
-            <article>
+            <article id="aboutMe">
                 <p>I am a 4th year B.S. Computer Engineering student in De La Salle University currently taking my internship in Highly Succeed Inc.</p>
             </article>
         </section>
 
-        <section>
+        <section onclick="showEducation()">
             <h2>EDUCATION</h2>
-            <article>
+            <article id="education">
                 <h3>De La Salle University</h3>
                 <p>B.S. Computer Engineering</p>
                 <p>Expected Graduation: 2026</p>
@@ -41,10 +43,10 @@
             </article>
         </section>
 
-        <section>
+        <section onclick="showExperience()">
             <h2>EXPERIENCE</h2>
             
-            <article>
+            <article id="experience">
                 <h3>Assistant Vice President for Events - DLSU ACCESS</h3>
                 <p>2024 – 2025</p>
                 <ul>
@@ -55,7 +57,7 @@
                 </ul>
             </article>
 
-            <article>
+            <article id="experience">
                 <h3>Junior Officer - DLSU Archers for UNICEF</h3>
                 <p>2023 – 2024</p>
                 <ul>
@@ -65,7 +67,7 @@
                 </ul>
             </article>
 
-            <article>
+            <article id="experience">
                 <h3>Freelance Digital & Traditional Artist / Graphics Designer </h3>
                 <p>2021 – Present</p>
                 <ul>
@@ -77,9 +79,9 @@
             </article>
         </section>
 
-        <section>
+        <section onclick="showSkills()">
             <h2>TECHNICAL SKILLS</h2>
-            <article>
+            <article id="skills">
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -90,13 +92,16 @@
             </article>
         </section>
     </main>
-    <footer>
+
+    <footer id="head-foot">
         <p>&copy; 2026 Fiona Elexie E. Lazo</p>
         <nav>
             <a href="https://www.figma.com/proto/ccB43lYO97nGBZGNSeFj4Q/Portfolio-FionaLazo-2025?node-id=0-1&t=SHWqqxi9cBnPudYR-1">Portfolio</a>
             <a href="https://www.linkedin.com/in/fiona-lazo/">LinkedIn</a>
             <a href="https://www.facebook.com/fiona.lazo.5">Facebook</a>
         </nav>
-    </footer>    
+    </footer>   
+    
+    <script src="script.js"></script>
 </body>
 </html>

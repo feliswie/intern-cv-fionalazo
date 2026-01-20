@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif; 
     line-height: 1.6;
+    background-color: rgb(216, 202, 228);
 }
 
 main {
@@ -16,7 +17,7 @@ main {
 header {
     background-color: rgb(181, 144, 212);
     padding: 20px;
-    border-bottom: 5px solid rgb(100, 78, 109);
+    border-bottom: 5px solid rgba(100, 78, 109, 0.61);
 }
 
 section {
@@ -31,10 +32,15 @@ section:hover {
     transition-duration: 0.7s;
 }
 
+article{
+    display: none;
+}
+
 ul {
     list-style-type: none;
     padding: 10px 0 30px 0;
     text-align: center; 
+    justify-content: center;
 }
 
 ul li {
@@ -42,7 +48,7 @@ ul li {
     margin: 0 15px; 
 }
 
-a {
+a, #themeBtn{
     border-radius: 10px;
     border-width: 1.5px;
     background-color: rgb(181, 144, 212);
@@ -53,11 +59,34 @@ a {
     text-decoration: none;
     padding: 8px 15px;
     margin: 0 10px 0 0;
+    box-shadow: 0 4px 12px rgba(71, 71, 71, 0.3)
 }
 
 a:hover {
     color: white;
     box-shadow: 0 4px 12px rgb(134, 0, 187, 0.8);
+    transition-duration: 0.5s;
+}
+
+#themeBtn {
+    float: right;
+    font-size: 16px;
+    border-radius: 10px;
+    border-width: 1.5px;
+    background-color: rgb(108, 104, 111);
+    border-color: rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 10px 0 0;
+    box-shadow: 0 4px 12px rgba(208, 22, 22, 0.3);
+}
+
+#themeBtn:hover{
+    color: rgb(50, 50, 50);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
     transition-duration: 0.5s;
 }
 
@@ -73,6 +102,55 @@ footer {
     margin: 70px 0 0 0;
     padding: 20px 20px 20px 20px;
     font-weight: bold;
-    background-color: rgb(216, 202, 228);
+    background-color: rgb(181, 144, 212);
     border-top: 5px solid rgba(100, 78, 109, 0.61);
 }
+
+#counter{
+    font-weight: bold;
+    color: rgb(179, 0, 0);
+    font-size: 30px;
+    white-space: normal;
+    float: right;
+    margin-top: -50px;
+    margin-bottom: 0px;
+    margin: -50px 75px 0 0;
+}
+
+/* CHANGING THEMES */
+.change-body {
+    background-color: #672323;
+    color: #e0e0e0;
+}
+
+.change-section {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.50);
+}
+
+.change-section:hover{
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.8);
+    transition-duration: 0.7s;
+}
+
+.change-head-foot{
+    background-color: #431212;
+    border-color: #8c7d7d;
+}
+
+.change-a{
+    background-color: #431212;
+    color: white;
+    border-color: #8c7d7d;
+    box-shadow: 0 4px 12px rgba(255, 126, 126, 0.2);
+}
+
+.change-a:hover {
+    color: rgb(146, 91, 91);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.8);
+    transition-duration: 0.5s;
+}
+
+.show-article{
+    display: block;
+}
+
